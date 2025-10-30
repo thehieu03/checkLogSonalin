@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ShopCoT:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ShopCoT_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ShopCoT" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jaxb-api-2.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/sqljdbc42.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../mysql-connector-j-9.3.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../mssql-jdbc-12.8.1.jre11.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ShopCoT/web/Web" />
+      <element id="javaee-facet-resources" facet="ShopCoT/web/Web2" />
+    </root>
+  </artifact>
+</component>

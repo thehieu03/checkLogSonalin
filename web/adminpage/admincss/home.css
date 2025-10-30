@@ -1,0 +1,105 @@
+:root {
+    --primary: #014576;
+    --primary-foreground: #ffffff;
+    --secondary: #f8f9fa;
+    --secondary-foreground: #212529;
+    --accent: #e9ecef;
+    --accent-foreground: #014576;
+    --background: #ffffff;
+    --foreground: #212529;
+    --card: #ffffff;
+    --card-foreground: #212529;
+    --border: #dee2e6;
+    --input: #ced4da;
+    --ring: #014576;
+    --font-family: 'Nunito', sans-serif;
+    --radius: 0.5rem;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--foreground);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary) 0%, #0569b3 100%);
+    color: var(--primary-foreground);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-foreground);
+    color: var(--primary-foreground);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-foreground);
+    color: var(--primary);
+}
+
+.card {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.bi {
+    color: var(--primary);
+}
+
+.social-links a {
+    color: var(--primary-foreground);
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.modal-content {
+    border-radius: var(--radius);
+}
+
+.form-control {
+    border-radius: var(--radius);
+    border: 1px solid var(--input);
+}
+
+.form-control:focus {
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px rgba(1, 69, 118, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
